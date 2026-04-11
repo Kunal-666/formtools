@@ -58,9 +58,9 @@ export async function compressPdfAdvanced(file: File, quality: number) {
     });
   }
 
-  const pdfBytes = await newPdf.save();
-  const blob = new Blob([pdfBytes], { type: "application/pdf" });
 
+  const pdfBytes = await newPdf.save();
+  const blob = new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" });
   return {
     blob,
     url: URL.createObjectURL(blob),
