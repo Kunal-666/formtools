@@ -2,11 +2,15 @@ export type SEOPageConfig = {
   slug: string;
   title: string;
   description: string;
+  keywords: string[];
   shellTitle: string;
   shellDescription: string;
   h1: string;
+  pageDescription: string;
   targetKB: number;
   intro: string[];
+  steps: string[];
+  worksFor: string[];
   faqs: {
     question: string;
     answer: string;
@@ -19,16 +23,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Resize Image to 20KB Online Free for Govt Form, SSC, Railway",
     description:
       "Resize image to 20KB online free for govt form, SSC exam, railway form, bank job and online application. Compress image for online form and photo upload instantly.",
+    keywords: [
+      "resize image 20kb",
+      "resize image for govt form",
+      "compress image for online form",
+    ],
     shellTitle: "Resize Image to 20 KB",
     shellDescription:
       "Compress image for online form uploads where portals require a very small photo size.",
     h1: "Resize Image to 20 KB Online Free",
+    pageDescription:
+      "Use this preset when a portal asks for a very small upload-ready image. It is useful for SSC, Railway, banking, scholarship, and other government-form workflows where a strict photo limit can block submission.",
     targetKB: 20,
     intro: [
       "Use this free online tool when a government form, SSC exam portal, railway recruitment website, banking application, or other online job form asks you to upload a photo under 20KB. Many Indian application systems reject images that are too large, so applicants often need a quick way to resize image for govt form submission without installing software.",
       "Image resizing is required because official portals usually enforce strict file-size rules to keep uploads fast and standardized. Whether you need a passport-size photo, profile image, or scanned document image, reducing it to the exact limit helps avoid upload errors and last-minute rejection messages during application submission.",
       "This Govt Form Toolkit helps you compress image for online form use in a simple browser workflow. Upload your image, preview the result, resize it close to the 20KB target, and download the processed file. It is especially useful for candidates searching for terms like resize image for govt form, signature size for SSC, and photo size reducer for online application.",
     ],
+    steps: [
+      "Upload the photo or image from your device.",
+      "Use the 20KB preset to process the file in your browser.",
+      "Preview the result and download the resized image for upload.",
+    ],
+    worksFor: ["SSC forms", "Railway forms", "Banking portals"],
     faqs: [
       {
         question: "How to resize image to 20KB?",
@@ -52,16 +69,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Resize Image to 30KB Online Free for Govt Form and Job Application",
     description:
       "Resize image to 30KB online free for govt forms, online exams, bank forms and recruitment applications. Compress image for online form and reduce photo size instantly.",
+    keywords: [
+      "resize image 30kb",
+      "photo under 30kb",
+      "compress image for online form",
+    ],
     shellTitle: "Resize Image to 30 KB",
     shellDescription:
       "Prepare photos under 30KB for government exams, recruitment forms, and online document portals.",
     h1: "Resize Image to 30 KB Online Free",
+    pageDescription:
+      "This target works well when a form allows a little more size than 20KB but still needs a very lightweight upload. It is a practical option for recruitment portals and exam applications that reject larger files.",
     targetKB: 30,
     intro: [
       "This page is designed for applicants who need to resize image for govt form submission when the portal asks for a photo under 30KB. It is useful for SSC, state-level recruitment, railway notifications, banking exams, and other official application websites that show a strict upload-size limit before you can proceed.",
       "Resizing matters because many form systems reject images even when the dimensions look correct. The real problem is usually file weight. If your photo is above the allowed threshold, the application may fail to upload, forcing you to repeat the process. That is why users often search for compress image for online form or photo under required KB before submitting.",
       "With this tool, you can upload a photo, preview it, reduce it close to 30KB, and download the optimized file instantly. It keeps the workflow simple for users trying to submit exam forms and government job applications quickly from mobile or desktop.",
     ],
+    steps: [
+      "Choose the image you want to upload for your form.",
+      "Process it with the 30KB preset to reduce file size quickly.",
+      "Download the final image and try it on the portal.",
+    ],
+    worksFor: ["Recruitment forms", "Govt portals", "Exam applications"],
     faqs: [
       {
         question: "How can I make photo size 30KB for online form?",
@@ -85,16 +115,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Resize Image to 50KB Online Free for SSC, Railway, Banking Form",
     description:
       "Resize image to 50KB online free for SSC form, railway form, banking exam, govt job application and online registration. Create photo under 50kb instantly.",
+    keywords: [
+      "resize image 50kb",
+      "photo under 50kb",
+      "resize image for govt form",
+    ],
     shellTitle: "Resize Image to 50 KB",
     shellDescription:
       "Create a photo under 50KB for government forms, exam registrations, and recruitment portals.",
     h1: "Resize Image to 50 KB Online Free",
+    pageDescription:
+      "Choose this page when you need a balanced image size that stays small while preserving better clarity. It is one of the most common targets for government forms, recruitment pages, and exam registration portals.",
     targetKB: 50,
     intro: [
       "If you are filling out SSC, railway, banking, defence, scholarship, or other government application forms, this page helps you create a photo under 50kb in seconds. Many Indian recruitment and exam portals ask for exact file sizes, so applicants frequently need to resize image for govt form submission before the upload button accepts the file.",
       "The reason resizing is required is simple: online systems validate file size before accepting the image. Even if your picture looks correct, the form may reject it if it crosses the limit. That is why phrases like photo under 50kb, compress image for online form, and resize image for govt form are so common among applicants.",
       "This tool gives you a direct way to upload, preview, compress, and download the image in one place. It is fast, mobile-friendly, and useful for anyone preparing exam or recruitment documents without using photo-editing software.",
     ],
+    steps: [
+      "Upload the photo required for your application.",
+      "Run the 50KB resize preset and wait for processing to finish.",
+      "Check the preview and download the resized file instantly.",
+    ],
+    worksFor: ["SSC forms", "Railway forms", "Banking exams"],
     faqs: [
       {
         question: "How to resize image to 50KB?",
@@ -118,16 +161,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Resize Image to 100KB Online Free for Govt Form and Online Exam",
     description:
       "Resize image to 100KB online free for govt form, exam registration, online recruitment and application portal uploads. Compress image for online form easily.",
+    keywords: [
+      "resize image 100kb",
+      "image under 100kb",
+      "compress image for online form",
+    ],
     shellTitle: "Resize Image to 100 KB",
     shellDescription:
       "Resize a photo to 100KB when the upload limit allows a little more detail and clarity.",
     h1: "Resize Image to 100 KB Online Free",
+    pageDescription:
+      "This preset is useful when a portal allows a larger image size and you want to keep more detail. It works well for profile photos, exam forms, and applications that need a cleaner image under 100KB.",
     targetKB: 100,
     intro: [
       "This free image resizer is useful when a government form, university portal, recruitment board, or exam application asks for a photo under 100KB. It suits users who want a balance between small file size and decent image clarity for official uploads.",
       "Many form portals enforce file-size restrictions to reduce server load and keep all applicant images standardized. If your photo is too large, the upload may fail even when dimensions are correct. That is why applicants often need to compress image for online form submission at the final stage.",
       "The tool helps by reducing the image close to the required 100KB target while keeping the workflow simple. Upload, preview, resize, and download your file in just a few taps whether you are applying from mobile or desktop.",
     ],
+    steps: [
+      "Select the image you want to reduce.",
+      "Use the 100KB preset for a larger but still upload-friendly output.",
+      "Download the processed image and verify the size before submission.",
+    ],
+    worksFor: ["Govt uploads", "University forms", "General online forms"],
     faqs: [
       {
         question: "How to resize image to 100KB online?",
@@ -151,16 +207,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Photo Under 50KB for SSC Form Online Free",
     description:
       "Create photo under 50kb for SSC form online free. Resize image for govt form, SSC registration, exam photo upload and online application in one click.",
+    keywords: [
+      "photo under 50kb ssc",
+      "ssc photo resizer",
+      "resize image for govt form",
+    ],
     shellTitle: "Photo Under 50KB for SSC",
     shellDescription:
       "Prepare an SSC-ready photo under 50KB for form filling, registration, and online exam applications.",
-    h1: "Resize Image to 50 KB Online Free",
+    h1: "Photo Under 50KB for SSC Form Online Free",
+    pageDescription:
+      "This page is tailored for SSC candidates who need an upload-ready photo under 50KB. It keeps the process simple for exam registration, document correction windows, and government form submission.",
     targetKB: 50,
     intro: [
       "Candidates filling SSC recruitment and exam forms often need a photo under 50kb before the portal allows the upload. This page is built specifically for that use case, making it easier to resize image for govt form submission without opening editing software or trying multiple random compressors.",
       "SSC and similar application systems check size carefully because standardized photo uploads make verification easier and keep the portal responsive. If the file is too large, your image may be rejected immediately, which is why users commonly search for photo under 50kb, compress image for online form, or SSC photo resizer.",
       "This tool helps by turning your image into a smaller upload-ready file with preview and download support. It is a practical option for students and job seekers who need a simple browser-based workflow for SSC, railway, and banking forms.",
     ],
+    steps: [
+      "Upload the passport-style photo you want to use for SSC.",
+      "Keep the 50KB preset selected and process the image.",
+      "Download the resized photo and use it in your SSC form.",
+    ],
+    worksFor: ["SSC registration", "Govt exam forms", "Recruitment portals"],
     faqs: [
       {
         question: "How to make photo under 50KB for SSC form?",
@@ -184,16 +253,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Signature Under 20KB Online Free for SSC, Govt Form, Exam Portal",
     description:
       "Make signature under 20kb online free for SSC form, govt job application, banking form and online exam portal. Resize signature size for SSC and govt forms instantly.",
+    keywords: [
+      "signature under 20kb",
+      "signature size for ssc",
+      "compress signature image",
+    ],
     shellTitle: "Signature Under 20KB",
     shellDescription:
       "Compress a signature image under 20KB for SSC, government job, and online exam form submission.",
-    h1: "Resize Image to 20 KB Online Free",
+    h1: "Signature Under 20KB Online Free",
+    pageDescription:
+      "Use this route when a portal asks for a very small signature file. It is especially useful for SSC, Railway, banking, and other government-form uploads where the signature field has a strict size cap.",
     targetKB: 20,
     intro: [
       "This page is especially useful when you need a signature under 20kb for SSC, railway, banking, or other government application portals. Signature uploads often fail because the image is scanned at a high resolution, making the file much larger than the allowed size.",
       "Resizing is required because signatures are treated as separate upload fields in many forms, and the portal may reject the file if it crosses the limit. Users therefore search for signature size for SSC, compress signature image for online form, or resize image for govt form when trying to complete the upload correctly.",
       "With this tool, you can upload your signature image, reduce it close to the 20KB target, preview the output, and download the final file. It offers a fast browser workflow for students, job seekers, and exam applicants who need a compliant signature file quickly.",
     ],
+    steps: [
+      "Upload the scanned or photographed signature image.",
+      "Run the 20KB resize preset to reduce the file for portal upload.",
+      "Preview the signature and download the resized result.",
+    ],
+    worksFor: ["SSC signatures", "Railway signatures", "Govt form uploads"],
     faqs: [
       {
         question: "How to make signature under 20KB?",
@@ -217,16 +299,29 @@ export const seoPages: Record<string, SEOPageConfig> = {
     title: "Passport Photo Size Maker Online Free for Govt Form and Exam Use",
     description:
       "Passport photo size maker online free for govt form, job application, SSC, banking and online registration. Resize passport photo for govt form and compress image for online form.",
+    keywords: [
+      "passport photo size maker",
+      "passport photo for govt form",
+      "photo under 50kb",
+    ],
     shellTitle: "Passport Photo Size Maker",
     shellDescription:
       "Prepare a passport-style photo file for online government forms and exam applications.",
-    h1: "Resize Image to 50 KB Online Free",
+    h1: "Passport Photo Size Maker Online Free",
+    pageDescription:
+      "This page is designed for users who need a passport-style image that is also light enough for online submission. It is helpful for job applications, exam portals, and government forms that ask for a clean portrait with a smaller file size.",
     targetKB: 50,
     intro: [
       "Use this passport photo size maker when you need a clean passport-style image for SSC, railway, banking, and other government applications. Many users first prepare a proper portrait photo and then need to resize image for govt form upload so that the portal accepts the file size requirement.",
       "Passport photos are commonly required in online forms because they provide a standard face image for verification. However, even a correctly cropped passport photo may still be rejected if the file is too large. That is why applicants often search for passport photo size maker, photo under 50kb, and compress image for online form before final submission.",
       "This tool helps you reduce a passport-style image close to the required upload size while keeping the process simple and mobile-friendly. Upload the image, preview the optimized result, and download it for immediate use in your application portal.",
     ],
+    steps: [
+      "Upload the passport-style photo from your device.",
+      "Process it with the recommended preset for online forms.",
+      "Download the resized image and use it for your application upload.",
+    ],
+    worksFor: ["Passport-style photos", "Govt forms", "Exam applications"],
     faqs: [
       {
         question: "How to make passport photo size for online form?",

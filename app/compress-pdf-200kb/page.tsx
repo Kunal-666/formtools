@@ -5,16 +5,16 @@ import { ToolShell } from "@/components/ui/tool-shell";
 export const metadata: Metadata = {
   title: "Compress PDF to 200 KB | Govt Form Toolkit",
   description:
-    "Optimize a PDF in the browser, preview the processed file status, and download a lighter version for form submission.",
+    "Compress PDF to 200KB online for document uploads, scanned forms, and broader government-portal file limits.",
 };
 
 export default function CompressPdf200KbPage() {
   return (
     <ToolShell
       title="Compress PDF to 200 KB"
-      description="Run lightweight browser-side PDF optimization for application portals with strict upload size rules."
+      description="Reduce scanned PDFs near 200KB when the portal allows a larger but still limited upload size."
     >
-      <CompressPdfToolClient />
+      <CompressPdfToolClient defaultTarget="200kb" />
     </ToolShell>
   );
 }

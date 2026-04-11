@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { SEOContent } from "@/components/seo/seo-content";
+import { PDFSEOContent } from "@/components/seo/pdf-seo-content";
 import { ToolShell } from "@/components/ui/tool-shell";
-import { seoPages, type SEOPageConfig } from "@/lib/seo-pages";
+import { pdfSeoPages, type PDFSEOPageConfig } from "@/lib/pdf-seo-pages";
 
-export function getSEOMetadata(slug: keyof typeof seoPages): Metadata {
-  const page = seoPages[slug];
+export function getPDFSEOMetadata(slug: keyof typeof pdfSeoPages): Metadata {
+  const page = pdfSeoPages[slug];
 
   return {
     title: page.title,
@@ -13,14 +13,13 @@ export function getSEOMetadata(slug: keyof typeof seoPages): Metadata {
   };
 }
 
-export function SEOPage({ page }: { page: SEOPageConfig }) {
+export function PDFSEOPage({ page }: { page: PDFSEOPageConfig }) {
   return (
     <ToolShell title={page.shellTitle} description={page.shellDescription}>
-      <SEOContent
+      <PDFSEOContent
         h1={page.h1}
         description={page.pageDescription}
-        intro={page.intro}
-        targetKB={page.targetKB}
+        defaultTarget={page.defaultTarget}
         steps={page.steps}
         worksFor={page.worksFor}
         faqs={page.faqs}

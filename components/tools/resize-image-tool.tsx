@@ -33,6 +33,12 @@ export function ResizeImageTool({
   }, []);
 
   useEffect(() => {
+    setTargetKB(defaultTargetKB);
+    setResultName(`resized-${defaultTargetKB}kb.jpg`);
+    setResultMeta("");
+  }, [defaultTargetKB]);
+
+  useEffect(() => {
     if (!file) {
       setSourceUrl(null);
       return;

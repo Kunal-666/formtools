@@ -10,6 +10,12 @@ const CompressPdfTool = dynamic(
   { ssr: false },
 );
 
-export default function CompressPdfToolClient() {
-  return <CompressPdfTool />;
+type CompressPdfToolClientProps = {
+  defaultTarget?: string;
+};
+
+export default function CompressPdfToolClient(
+  props: CompressPdfToolClientProps,
+) {
+  return <CompressPdfTool {...props} />;
 }
