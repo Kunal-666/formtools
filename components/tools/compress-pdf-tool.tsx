@@ -15,7 +15,9 @@ async function compressPdfBasic(file: File) {
     addDefaultPage: false,
     updateFieldAppearances: false,
   });
-  const blob = new Blob([saved.buffer], { type: "application/pdf" });
+  const blob = new Blob([saved.buffer as ArrayBuffer], {
+    type: "application/pdf",
+  });
 
   return {
     blob,
