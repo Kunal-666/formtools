@@ -74,10 +74,13 @@ export default function HomePage() {
             exact image sizes, passport photo sheets, lighter PDFs, and neatly
             cropped signatures.
           </p>
+          <p className="text-sm font-medium text-ink/60 sm:text-base">
+            Free | No Signup | Instant Download | Works for Govt Forms
+          </p>
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2">
+      <section id="tools" className="grid gap-4 md:grid-cols-2">
         {tools.map((tool) => (
           <Link
             key={tool.href}
@@ -94,3 +97,4 @@ export default function HomePage() {
     </main>
   );
 }
+
