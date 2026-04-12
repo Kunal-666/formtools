@@ -1,32 +1,46 @@
 import { MetadataRoute } from 'next'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://formtools.site'
+const baseUrl = 'https://formtools.site'
 
-    // Static pages
-    const staticRoutes = [
+const imageTools = [
+    "/resize-image-20kb",
+    "/resize-image-30kb",
+    "/resize-image-50kb",
+    "/resize-image-100kb",
+    "/image-resizer",
+    "/signature-under-20kb",
+    "/passport-photo-size-maker",
+    "/passport-photo-maker",
+]
+
+const pdfTools = [
+    "/compress-pdf-20kb",
+    "/compress-pdf-50kb",
+    "/compress-pdf-100kb",
+    "/compress-pdf-for-ssc-form",
+    "/compress-pdf-for-railway-form",
+    "/compress-percent",
+]
+
+const popularUseCases = [
+    "/photo-under-50kb-ssc",
+    "/signature-resize",
+    "/compress-pdf-200kb",
+]
+
+export default function sitemap(): MetadataRoute.Sitemap {
+
+    const allRoutes = [
         '',
-        '/compress-image',
-        '/compress-pdf',
-        '/passport-photo',
+        ...imageTools,
+        ...pdfTools,
+        ...popularUseCases,
     ]
 
-    const staticUrls = staticRoutes.map((route) => ({
+    return allRoutes.map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: route === '' ? 1 : 0.9,
+        changeFrequency: 'weekly',
+        priority: route === '' ? 1 : 0.8,
     }))
-
-    // Example: future dynamic tools (if stored in DB/API)
-    // const tools = await fetchTools()
-    // const dynamicUrls = tools.map(tool => ({
-    //   url: `${baseUrl}/${tool.slug}`,
-    //   lastModified: new Date(tool.updatedAt),
-    // }))
-
-    return [
-        ...staticUrls,
-        // ...dynamicUrls
-    ]
 }
