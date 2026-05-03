@@ -16,6 +16,7 @@ type SEOContentProps = {
   description: string;
   intro: string[];
   targetKB: number;
+  content: string[];
   steps: string[];
   worksFor: string[];
   faqs: FAQItem[];
@@ -34,6 +35,7 @@ export function SEOContent({
   description,
   intro,
   targetKB,
+  content,
   steps,
   worksFor,
   faqs,
@@ -52,6 +54,21 @@ export function SEOContent({
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
           Best for photos, signatures, and online form uploads
         </p>
+        <p className="text-sm leading-7 text-ink/75 sm:text-base">
+          Need a strict limit? Try{" "}
+          <Link href="/resize-image-20kb" className="font-medium text-accent">
+            resize image to 20KB
+          </Link>
+          ,{" "}
+          <Link href="/resize-image-50kb" className="font-medium text-accent">
+            resize image to 50KB
+          </Link>
+          , or use the{" "}
+          <Link href="/image-resizer" className="font-medium text-accent">
+            custom image resizer
+          </Link>{" "}
+          when a portal shows a unique KB limit.
+        </p>
         <div className="space-y-4 text-sm leading-7 text-ink/75 sm:text-base">
           {intro.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
@@ -60,6 +77,15 @@ export function SEOContent({
       </section>
 
       <ResizeImageToolClient defaultTargetKB={targetKB} />
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">About This Tool</h2>
+        <div className="space-y-4 text-sm leading-7 text-ink/70 sm:text-base">
+          {content.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </section>
 
       <section className="grid gap-4 lg:grid-cols-[1fr_0.9fr]">
         <article className="rounded-[24px] border border-ink/10 bg-white/90 p-5">
@@ -89,7 +115,7 @@ export function SEOContent({
       </section>
 
       <section className="rounded-[24px] border border-ink/10 bg-muted/35 p-5">
-        <h2 className="text-xl font-semibold">Popular Image Resize Tools</h2>
+        <h2 className="text-xl font-semibold">Related Tools</h2>
         <div className="mt-3 flex flex-wrap gap-3">
           {links.map((link) => (
             <Link
@@ -113,7 +139,14 @@ export function SEOContent({
             >
               <h3 className="text-base font-semibold">{faq.question}</h3>
               <p className="mt-2 text-sm leading-7 text-ink/70 sm:text-base">
-                {faq.answer}
+                {faq.answer}{" "}
+                <span className="whitespace-nowrap">
+                  Try{" "}
+                  <Link href="/image-resizer" className="font-medium text-accent">
+                    custom image resizer
+                  </Link>{" "}
+                  for exact limits.
+                </span>
               </p>
             </article>
           ))}

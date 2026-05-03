@@ -9,6 +9,7 @@ export type SEOPageConfig = {
   pageDescription: string;
   targetKB: number;
   intro: string[];
+  content: string[];
   steps: string[];
   worksFor: string[];
   faqs: {
@@ -39,6 +40,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Use this free online tool when a government form, SSC exam portal, railway recruitment website, banking application, or other online job form asks you to upload a photo under 20KB. Many Indian application systems reject images that are too large, so applicants often need a quick way to resize image for govt form submission without installing software.",
       "Image resizing is required because official portals usually enforce strict file-size rules to keep uploads fast and standardized. Whether you need a passport-size photo, profile image, or scanned document image, reducing it to the exact limit helps avoid upload errors and last-minute rejection messages during application submission.",
       "This Govt Form Toolkit helps you compress image for online form use in a simple browser workflow. Upload your image, preview the result, resize it close to the 20KB target, and download the processed file. It is especially useful for candidates searching for terms like resize image for govt form, signature size for SSC, and photo size reducer for online application.",
+    ],
+    content: [
+      "A 20KB image limit is common for signatures, thumbnails, and strict profile-photo fields in SSC, Railway, banking, and other government portals. The problem usually appears when your phone camera creates a large file even though the photo looks small on screen.",
+      "To get consistent results, start with a clear image (good lighting, simple background) and avoid screenshots that add compression artifacts. After processing, download the output and re-check the file size before uploading to the portal.",
+      "If the portal still rejects your file, confirm it accepts JPG format and that you are uploading in the correct field (photo vs signature). For unique limits, use the custom image resizer and enter the exact KB shown by the form.",
     ],
     steps: [
       "Upload the photo or image from your device.",
@@ -86,6 +92,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Resizing matters because many form systems reject images even when the dimensions look correct. The real problem is usually file weight. If your photo is above the allowed threshold, the application may fail to upload, forcing you to repeat the process. That is why users often search for compress image for online form or photo under required KB before submitting.",
       "With this tool, you can upload a photo, preview it, reduce it close to 30KB, and download the optimized file instantly. It keeps the workflow simple for users trying to submit exam forms and government job applications quickly from mobile or desktop.",
     ],
+    content: [
+      "A 30KB upload limit is often used for photos in recruitment forms and exam portals where the portal wants a lightweight file but still needs the face to be clearly visible. This target can be a better option than 20KB when your photo becomes too blurry after aggressive compression.",
+      "If you are preparing documents for SSC, Railway, banking, or state recruitment, aim for a sharp passport-style photo and then reduce it to the required KB. Always verify the preview, especially around the face edges and text in the background (if any).",
+      "Common issues include “file size not changing” (usually when the source image is already compressed) and “image looks pixelated” (a sign the target is too strict). In those cases, try 50KB or use a custom KB limit that matches the portal requirement.",
+    ],
     steps: [
       "Choose the image you want to upload for your form.",
       "Process it with the 30KB preset to reduce file size quickly.",
@@ -131,6 +142,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "If you are filling out SSC, railway, banking, defence, scholarship, or other government application forms, this page helps you create a photo under 50kb in seconds. Many Indian recruitment and exam portals ask for exact file sizes, so applicants frequently need to resize image for govt form submission before the upload button accepts the file.",
       "The reason resizing is required is simple: online systems validate file size before accepting the image. Even if your picture looks correct, the form may reject it if it crosses the limit. That is why phrases like photo under 50kb, compress image for online form, and resize image for govt form are so common among applicants.",
       "This tool gives you a direct way to upload, preview, compress, and download the image in one place. It is fast, mobile-friendly, and useful for anyone preparing exam or recruitment documents without using photo-editing software.",
+    ],
+    content: [
+      "50KB is one of the most searched size targets for government form photo uploads in India. It is commonly used for SSC, Railway, banking, and other job applications because it keeps uploads fast while preserving enough detail for verification.",
+      "To avoid upload errors, process the photo first, then re-open the downloaded file to confirm size and clarity. If your photo is still rejected, check the portal’s allowed formats and whether it expects a recent passport-style photo (front-facing, neutral background).",
+      "If the portal shows a custom limit (for example 60KB or 75KB), use the custom image resizer page and enter the exact KB value instead of forcing a 50KB preset.",
     ],
     steps: [
       "Upload the photo required for your application.",
@@ -178,6 +194,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Many form portals enforce file-size restrictions to reduce server load and keep all applicant images standardized. If your photo is too large, the upload may fail even when dimensions are correct. That is why applicants often need to compress image for online form submission at the final stage.",
       "The tool helps by reducing the image close to the required 100KB target while keeping the workflow simple. Upload, preview, resize, and download your file in just a few taps whether you are applying from mobile or desktop.",
     ],
+    content: [
+      "A 100KB target is useful when you want better clarity for official uploads. Some portals allow higher KB limits for images, especially when the uploaded photo is used for profile verification or printed admit cards.",
+      "If you are unsure which size the portal accepts, start with 100KB and test the upload. If it rejects the file, step down to 50KB or 30KB instead of guessing randomly. This is faster and reduces quality loss from repeated re-exports.",
+      "For best results, use a clean original image: good lighting, minimal background noise, and correct cropping. Then resize to the target and download the form-ready output.",
+    ],
     steps: [
       "Select the image you want to reduce.",
       "Use the 100KB preset for a larger but still upload-friendly output.",
@@ -223,6 +244,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Candidates filling SSC recruitment and exam forms often need a photo under 50kb before the portal allows the upload. This page is built specifically for that use case, making it easier to resize image for govt form submission without opening editing software or trying multiple random compressors.",
       "SSC and similar application systems check size carefully because standardized photo uploads make verification easier and keep the portal responsive. If the file is too large, your image may be rejected immediately, which is why users commonly search for photo under 50kb, compress image for online form, or SSC photo resizer.",
       "This tool helps by turning your image into a smaller upload-ready file with preview and download support. It is a practical option for students and job seekers who need a simple browser-based workflow for SSC, railway, and banking forms.",
+    ],
+    content: [
+      "For SSC uploads, it helps to keep the photo passport-style: front-facing, natural light, and a plain background. Once you have the right photo, reducing it to under 50KB ensures the portal accepts it without repeated errors.",
+      "If you are also uploading a signature, remember that SSC forms often have a separate signature size limit. Prepare both files ahead of time to avoid last-minute submission delays.",
+      "If the SSC portal rejects your photo even under 50KB, check if it requires specific dimensions or a maximum pixel size. When that happens, use a clearer original photo and resize again rather than compressing an already blurry file further.",
     ],
     steps: [
       "Upload the passport-style photo you want to use for SSC.",
@@ -270,6 +296,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Resizing is required because signatures are treated as separate upload fields in many forms, and the portal may reject the file if it crosses the limit. Users therefore search for signature size for SSC, compress signature image for online form, or resize image for govt form when trying to complete the upload correctly.",
       "With this tool, you can upload your signature image, reduce it close to the 20KB target, preview the output, and download the final file. It offers a fast browser workflow for students, job seekers, and exam applicants who need a compliant signature file quickly.",
     ],
+    content: [
+      "Signature files fail uploads more often than photos because they are usually scanned with too much white space around the signature. Cropping the extra margins before resizing can make it easier to hit a strict 20KB target.",
+      "For SSC and similar portals, use a dark pen on plain white paper and take a clear photo or scan. Then resize and verify that the signature strokes remain sharp. If the signature becomes faint, try a slightly higher limit or re-capture the signature with better contrast.",
+      "If you need to trim space around the signature first, use the signature crop + resize tool and then return to this 20KB page for the final size target.",
+    ],
     steps: [
       "Upload the scanned or photographed signature image.",
       "Run the 20KB resize preset to reduce the file for portal upload.",
@@ -315,6 +346,11 @@ export const seoPages: Record<string, SEOPageConfig> = {
       "Use this passport photo size maker when you need a clean passport-style image for SSC, railway, banking, and other government applications. Many users first prepare a proper portrait photo and then need to resize image for govt form upload so that the portal accepts the file size requirement.",
       "Passport photos are commonly required in online forms because they provide a standard face image for verification. However, even a correctly cropped passport photo may still be rejected if the file is too large. That is why applicants often search for passport photo size maker, photo under 50kb, and compress image for online form before final submission.",
       "This tool helps you reduce a passport-style image close to the required upload size while keeping the process simple and mobile-friendly. Upload the image, preview the optimized result, and download it for immediate use in your application portal.",
+    ],
+    content: [
+      "A passport-style photo is a standard requirement for most government forms and exam registrations. The challenge is that a well-lit modern phone photo can be several megabytes, which is far above typical portal limits like 50KB or 100KB.",
+      "This page helps you prepare an upload-ready passport photo file size without changing your workflow. Start with a clear portrait and a plain background, then resize to the required KB limit and confirm the face remains recognizable.",
+      "If you need a print sheet for physical copies, use the passport photo maker to generate an A4 sheet. For online upload only, this size-maker page focuses on producing a light file that meets portal limits quickly.",
     ],
     steps: [
       "Upload the passport-style photo from your device.",

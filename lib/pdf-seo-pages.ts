@@ -7,6 +7,7 @@ export type PDFSEOPageConfig = {
   shellDescription: string;
   h1: string;
   pageDescription: string;
+  content: string[];
   defaultTarget?: string;
   steps: string[];
   worksFor: string[];
@@ -29,6 +30,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF to 20KB Online Free",
     pageDescription:
       "Use this page when a portal demands an extremely small PDF. It is useful for lightweight scanned documents and strict upload rules often seen in online government form workflows.",
+    content: [
+      "Many SSC, Railway, and government portals set small PDF limits to keep uploads fast and consistent. The issue usually appears at the final step of a form: your scan looks correct, but the portal rejects it because the PDF is above the allowed KB limit.",
+      "This tool focuses on scanned PDFs. A typical workflow is to scan one or two pages (ID proof, certificate, or form), then compress it close to the target and confirm that text is still readable. If your PDF contains many pages or high-resolution photos, the tool may only get close to 20KB; in that case, consider splitting the document or using a higher limit page first.",
+      "Common issues include unreadable text after aggressive compression and file-size “sticking” above the limit. When that happens, try a slightly higher target such as 50KB and check the exact portal rule before attempting 20KB again.",
+    ],
     defaultTarget: "20kb",
     steps: [
       "Upload the scanned or original PDF from your device.",
@@ -66,6 +72,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF to 50KB Online Free",
     pageDescription:
       "This page is useful when you need a medium compression target that still keeps scans readable. It works well for scanned certificates, small application documents, and general portal uploads.",
+    content: [
+      "A 50KB target is a practical middle ground for many online forms. It reduces file size enough to meet strict upload requirements while keeping scanned text readable, which is important for certificates and documents submitted during recruitment or verification.",
+      "If you are compressing a scanned PDF for SSC or Railway portals, start here when the upload limit is unclear or when 20KB makes the document too blurry. After compression, zoom into the preview on your device to confirm names, dates, and stamp text remain legible.",
+      "If the PDF is still above 50KB, it usually means the scan has heavy noise, too many pages, or very high resolution. Re-scan in grayscale or lower DPI (if possible) and compress again for better results.",
+    ],
     defaultTarget: "50kb",
     steps: [
       "Upload the PDF you want to reduce.",
@@ -103,6 +114,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF to 100KB Online Free",
     pageDescription:
       "Choose this page when you need a more practical size target for scanned documents. It works well for SSC, Railway, and other government form uploads that need a smaller but still readable PDF.",
+    content: [
+      "100KB is often the best starting point for scanned PDFs because it preserves readability. Many portals accept a 100KB document even when they keep image uploads smaller, so it is a common target for certificates, ID scans, and supporting documents.",
+      "If you are compressing for SSC or Railway applications, use this page first and only go down to 50KB or 20KB when the portal explicitly demands it. This reduces the risk of unreadable text that can cause verification issues later.",
+      "For multi-page PDFs, focus on keeping the scan clean: crop extra margins before scanning and avoid glossy photos that increase size. Then compress and double-check clarity before uploading.",
+    ],
     defaultTarget: "100kb",
     steps: [
       "Upload the original or scanned PDF document.",
@@ -140,6 +156,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF for SSC Form Online Free",
     pageDescription:
       "This page is focused on SSC candidates who need to reduce scanned PDFs before uploading documents. It is a straightforward way to shrink a PDF without installing separate software.",
+    content: [
+      "SSC application flows often require uploading scanned documents within a limited file size. The most common pain point is reaching the upload step and seeing an error because your scan is larger than the portal limit.",
+      "Use this tool for scanned PDFs like certificates, ID proof, or document corrections. Start with the recommended target and verify readability by zooming into key details such as name, roll number, and document dates.",
+      "If your PDF is already digitally generated (not scanned), compression may be less effective. For best results, scanned PDFs with clear text and minimal background noise compress more reliably.",
+    ],
     defaultTarget: "100kb",
     steps: [
       "Upload the SSC-related PDF you need to submit.",
@@ -177,6 +198,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF for Railway Form Online Free",
     pageDescription:
       "This route is tailored for railway application flows where scanned documents need to be smaller before upload. It keeps the process simple and fast for users working from a phone or laptop.",
+    content: [
+      "Railway recruitment and application portals typically enforce upload limits to keep submissions consistent. Scanned PDFs (certificates, ID proof, or forms) can easily exceed those limits if they are scanned in color or at high resolution.",
+      "This page gives you a form-focused workflow: upload the document, compress with a practical target, and download an upload-ready PDF. It is helpful for candidates applying from mobile devices where file-size issues are harder to fix with desktop software.",
+      "If the portal rejects the file even after compression, double-check whether it expects an image instead of a PDF. In that case, use the image tools to create a smaller JPG under the required KB limit.",
+    ],
     defaultTarget: "100kb",
     steps: [
       "Upload the PDF document needed for your railway form.",
@@ -214,6 +240,11 @@ export const pdfSeoPages: Record<string, PDFSEOPageConfig> = {
     h1: "Compress PDF by Percent Online Free",
     pageDescription:
       "If you are looking for a percent-style PDF reducer, this page gives you practical preset targets that make it easier to lower file size without manual editing. It works especially well for scanned PDFs that need to become smaller for form submission.",
+    content: [
+      "Many users search for “compress PDF by percent” when they want a smaller file but do not know the exact KB limit. For government-form uploads, size limits are usually defined in KB, so this page focuses on practical targets instead of abstract percentages.",
+      "If your goal is to reduce size significantly, start with 100KB or 50KB to preserve readability, then move to 20KB only when the portal requires it. This approach avoids wasting time with repeated trial-and-error uploads.",
+      "Common issues include blurred scans after heavy compression and PDFs that do not shrink because they are already optimized. Scanned PDFs respond best because the tool can re-render pages into a lighter output.",
+    ],
     defaultTarget: "50kb",
     steps: [
       "Upload your PDF and choose a lower target that matches how much reduction you need.",

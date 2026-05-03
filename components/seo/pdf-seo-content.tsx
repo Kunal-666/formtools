@@ -9,6 +9,7 @@ type FAQItem = {
 type PDFSEOContentProps = {
   h1: string;
   description: string;
+  content: string[];
   defaultTarget?: string;
   steps: string[];
   worksFor: string[];
@@ -27,6 +28,7 @@ const otherPdfTools = [
 export function PDFSEOContent({
   h1,
   description,
+  content,
   defaultTarget,
   steps,
   worksFor,
@@ -45,9 +47,39 @@ export function PDFSEOContent({
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
           Best for scanned PDFs
         </p>
+        <p className="text-sm leading-7 text-ink/75 sm:text-base">
+          Preparing a PDF for SSC or Railway uploads? See{" "}
+          <Link
+            href="/compress-pdf-for-ssc-form"
+            className="font-medium text-accent"
+          >
+            compress PDF for SSC form
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="/compress-pdf-for-railway-form"
+            className="font-medium text-accent"
+          >
+            compress PDF for Railway form
+          </Link>{" "}
+          for portal-focused presets, or compare strict targets like{" "}
+          <Link href="/compress-pdf-20kb" className="font-medium text-accent">
+            compress PDF to 20KB
+          </Link>
+          .
+        </p>
       </section>
 
       <CompressPdfToolClient defaultTarget={defaultTarget} />
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">About This PDF Tool</h2>
+        <div className="space-y-4 text-sm leading-7 text-ink/70 sm:text-base">
+          {content.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </section>
 
       <section className="grid gap-4 lg:grid-cols-[1fr_0.9fr]">
         <article className="rounded-[24px] border border-ink/10 bg-white/90 p-5">
@@ -77,7 +109,7 @@ export function PDFSEOContent({
       </section>
 
       <section className="rounded-[24px] border border-ink/10 bg-muted/35 p-5">
-        <h2 className="text-xl font-semibold">Other PDF Tools</h2>
+        <h2 className="text-xl font-semibold">Related Tools</h2>
         <div className="mt-3 flex flex-wrap gap-3">
           {otherPdfTools.map((tool) => (
             <Link
@@ -101,7 +133,14 @@ export function PDFSEOContent({
             >
               <h3 className="text-base font-semibold">{faq.question}</h3>
               <p className="mt-2 text-sm leading-7 text-ink/70 sm:text-base">
-                {faq.answer}
+                {faq.answer}{" "}
+                <span className="whitespace-nowrap">
+                  See{" "}
+                  <Link href="/compress-pdf-100kb" className="font-medium text-accent">
+                    compress PDF to 100KB
+                  </Link>{" "}
+                  if you need better readability.
+                </span>
               </p>
             </article>
           ))}

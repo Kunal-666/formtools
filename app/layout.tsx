@@ -10,11 +10,20 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://formtools.site"),
   title: "FormTools | Image, PDF, Passport Photo & Signature Tools",
   description:
     "FormTools helps students and applicants resize images, compress PDFs, prepare passport photos, and format signatures for government forms and job applications.",
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "FormTools | Govt Form Toolkit",
+    description:
+      "Resize images, compress PDFs, prepare passport photos, and format signatures for SSC, Railway, and other government forms.",
+    url: "https://formtools.site",
+    siteName: "FormTools",
+    type: "website",
   },
 };
 

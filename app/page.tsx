@@ -29,7 +29,8 @@ const imageTools = [
   {
     href: "/signature-under-20kb",
     title: "Signature Under 20KB",
-    description: "Resize signature images for SSC and other government application portals.",
+    description:
+      "Resize signature images for SSC and other government application portals.",
   },
   {
     href: "/passport-photo-size-maker",
@@ -156,6 +157,150 @@ export default function HomePage() {
           <p className="text-sm font-medium text-ink/60 sm:text-base">
             Free | No Signup | Instant Download | Works for Govt Forms
           </p>
+        </div>
+      </section>
+
+      <section className="rounded-[28px] border border-ink/10 bg-white/85 p-6 shadow-soft sm:p-8">
+        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          How to prepare files for government forms
+        </h2>
+        <div className="mt-3 space-y-4 text-sm leading-7 text-ink/70 sm:text-base">
+          <p>
+            Most portals (SSC, Railway, banking, scholarships, and state
+            recruitment) reject uploads for two reasons: the file is larger than
+            the KB limit or the scan is unreadable after compression. If the
+            form asks for a photo under a strict limit, use{" "}
+            <Link href="/resize-image-50kb" className="font-medium text-accent">
+              resize image to 50KB
+            </Link>{" "}
+            or{" "}
+            <Link href="/resize-image-20kb" className="font-medium text-accent">
+              resize image to 20KB
+            </Link>{" "}
+            and verify the preview before submission.
+          </p>
+          <p>
+            For scanned documents like certificates or ID pages, start with a
+            realistic target. If the portal says 100KB, try{" "}
+            <Link
+              href="/compress-pdf-100kb"
+              className="font-medium text-accent"
+            >
+              compress PDF to 100KB
+            </Link>{" "}
+            first, and only go smaller if required. For very strict upload
+            rules, use{" "}
+            <Link href="/compress-pdf-50kb" className="font-medium text-accent">
+              compress PDF to 50KB
+            </Link>{" "}
+            or{" "}
+            <Link href="/compress-pdf-20kb" className="font-medium text-accent">
+              compress PDF to 20KB
+            </Link>{" "}
+            and check that text is still readable.
+          </p>
+          <p>
+            If you are preparing a signature file, portals often have a separate
+            signature KB limit. Use{" "}
+            <Link
+              href="/signature-under-20kb"
+              className="font-medium text-accent"
+            >
+              signature under 20KB
+            </Link>{" "}
+            or the{" "}
+            <Link href="/signature-resize" className="font-medium text-accent">
+              signature crop + resize tool
+            </Link>{" "}
+            to clean the edges. For print-ready passport photos, generate an
+            A4 sheet using{" "}
+            <Link
+              href="/passport-photo-maker"
+              className="font-medium text-accent"
+            >
+              passport photo maker
+            </Link>
+            .
+          </p>
+          <p className="text-sm font-medium text-ink/60 sm:text-base">
+            Tip: Keep one “final upload” folder and test uploads early to avoid
+            last-minute errors.
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          Frequently Asked Questions
+        </h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          <article className="rounded-[24px] border border-ink/10 bg-white/85 p-5 shadow-soft">
+            <h3 className="text-base font-semibold text-ink">
+              How to compress PDF to 20KB for SSC form?
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-ink/70">
+              Use{" "}
+              <Link href="/compress-pdf-20kb" className="font-medium text-accent">
+                compress PDF to 20KB
+              </Link>{" "}
+              for strict limits, but confirm readability. If the scan becomes
+              unclear, try{" "}
+              <Link
+                href="/compress-pdf-50kb"
+                className="font-medium text-accent"
+              >
+                compress PDF to 50KB
+              </Link>{" "}
+              and re-check the portal rule.
+            </p>
+          </article>
+          <article className="rounded-[24px] border border-ink/10 bg-white/85 p-5 shadow-soft">
+            <h3 className="text-base font-semibold text-ink">
+              What if my photo is rejected even after resizing?
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-ink/70">
+              Check format (JPG works best), then try a different preset like{" "}
+              <Link href="/resize-image-30kb" className="font-medium text-accent">
+                resize image to 30KB
+              </Link>{" "}
+              or use the{" "}
+              <Link href="/image-resizer" className="font-medium text-accent">
+                custom image resizer
+              </Link>{" "}
+              when the portal shows a unique KB limit.
+            </p>
+          </article>
+          <article className="rounded-[24px] border border-ink/10 bg-white/85 p-5 shadow-soft">
+            <h3 className="text-base font-semibold text-ink">
+              Which tool should I use for Railway document uploads?
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-ink/70">
+              For scans, start with{" "}
+              <Link
+                href="/compress-pdf-for-railway-form"
+                className="font-medium text-accent"
+              >
+                compress PDF for Railway form
+              </Link>{" "}
+              and use 100KB when possible. For images, use{" "}
+              <Link href="/resize-image-100kb" className="font-medium text-accent">
+                resize image to 100KB
+              </Link>{" "}
+              when you need more clarity.
+            </p>
+          </article>
+          <article className="rounded-[24px] border border-ink/10 bg-white/85 p-5 shadow-soft">
+            <h3 className="text-base font-semibold text-ink">
+              Do you store uploaded files?
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-ink/70">
+              Processing happens in your browser for these tools. See{" "}
+              <Link href="/privacy-policy" className="font-medium text-accent">
+                privacy policy
+              </Link>{" "}
+              for details.
+            </p>
+          </article>
         </div>
       </section>
 
